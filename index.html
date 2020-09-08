@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html>
-<!--
+<head>
+
 <style>
-  h2 {
-    "font-family:georgia; color:darkRed"
-  }
+  h2 {font-family:georgia; color:darkRed;}
+  p {font-family:georgia}
+  a:link {color:darkRed}
+  a:visited {color:rgb(102, 0, 51)}
+  a:hover {color:rgb(255, 0, 0)}
+  a:active {color:rgb(128, 0, 0)}
+  table, th, td {border: 1px solid black;}
 </style>
--->
+</head>
 
-<body style="background-color:linen">
+<body style="background-color:linen;">
 
-<h1 style = "color:darkRed; text-align:center; font-family:georgia">
-  Introduction to Jam</h1>
+<h1 style="color:darkRed; font-family:georgia;">
+  Andrew's Steak Recipe</h1>
 
-<h2 style = "font-family:georgia; color:darkRed">What is jam?</h2>
-<img src="jam.jpg" alt="Jam" width="200" height="250" />
-<blockquote style="font-family:georgia;" cite="https://simple.wikipedia.org/wiki/Jam">
-  Jam is a condiment, usually made from pressed fruit, sugar, and sometimes pectin. Most jams are cooked.
+<h2>What is steak?</h2>
+
+<h4 style="font-family:georgia;"> When focusing on beef, steak is: </h4>
+<blockquote style="font-family:georgia; font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368">
+  A slice of meat cut from the fleshy part of a beef carcass. <br /> <!--Do i need ellipses?-->
+  Beef steaks are generally cut across the muscle fiber of a  <br />
+  large section of beef and may or may not include a bone. <br />
+  Most steaks come from three prime areas on a cow.
 </blockquote>
-<p style = "font-family:georgia"><cite>Simple English Wikipedia</cite></p>
+
+<!--Can I use both a link and a citation on the same text? -->
+<a href="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368" target="_blank"><cite>-The Kitchn</cite></a>
+<hr />
+<!-- How do I center an image??-->
+<img src="https://i.redd.it/exuxgpuf8gx41.jpg" style="margin-left:auto; margin-right: auto;"alt="not my steak" width="200" height="250" />
+
 <hr />
 
-<h2 style = "font-family:georgia; color:darkRed">Another Another Heading</h2>
-<p style = "color:blue;">My first paragraph.</p>
+<h2>Why should you trust Andrew?</h2>
+<p>
+<!--Why is it so far to the right-->
+<!--How do I add more white space-->
+<!--Limit right margin-->
+<picture style="float:right;">
+  <source media="min-width:1000px" srcset="cookingsteak.gif" alt="This is a steak being cooked.">
+  <source media="min-width:500px" srcset="verticalsteak.jpg" alt="Uncooked steak">
+  <img src="opensteak.jpg" alt="Steak cut halfway through">
+</picture>
+  Reasons: <strong>There are none.<strong></p>
+<button onclick="document.location='reasons.html'"> More reasons why you should trust Andrew with your dinner.</button>
 
+
+<hr />
+
+<h2>Ingredients</h2>
+<table style="width=100%">
+  <tr>
+    <th>Ingredients</th>
+    <th>Amount</th>
+  <tr>
+    <td>Ribeye or New York Steaks</td>
+    <!--why it do this???-->
+    <td>1-2 steaks</td>
+  <tr>
+    <td>Butter</td>
+
+
+</table>
+<!-- Need to edit everything below -->
 <p><strong>Seperated paragraph.</strong><br />New line.</p>
 
 <hr />
-
 </body>
 </html>
