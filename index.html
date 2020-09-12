@@ -1,74 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <style>
+  .backgroundSquare{width: 50vw; height: 300vh; background-color: linen;}
+  .margin{width: 40vw; height: 100vh; background-color: darkRed; right:0; position: absolute; top: 50%; left: 50%; transform: translate(+17%, +25%); z-index: 1; top: 0; overflow-x: hidden; text-align: center;}
+  ul, ol{font-family:georgia}
   h2 {font-family:georgia; color:darkRed;}
+  h3 {font-family:georgia; color:ghostWhite}
   p {font-family:georgia}
   a:link {color:darkRed}
   a:visited {color:rgb(102, 0, 51)}
   a:hover {color:rgb(255, 0, 0)}
   a:active {color:rgb(128, 0, 0)}
   table, th, td {border: 1px solid black;}
+  .reviews{background-color: darkRed; color: white; border: 2px solid black; margin: 20px; padding: 20px;}
 </style>
 </head>
 
-<body style="background-color:linen;">
+<body style="background-color:azure;">
 
-<h1 style="color:darkRed; font-family:georgia;">
-  Andrew's Steak Recipe</h1>
+<h1 style="background-color:darkRed; color:ghostWhite; font-family:georgia;">
+  <br />
+  Andrew's Steak Recipe
+</h1>
 
-<h2>What is steak?</h2>
+<div class ="backgroundSquare">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#whatIsSteak">What is Steak?</a></li>
+    <li><a href="#wikipediaEntry">Wikipedia Entry</a></li>
+    <li><a href="#trustAndrew">Why should you trust Andrew?</a></li>
+    <li><a href="#ingredients">Ingredients List</a></li>
+    <li><a href="#instructions">Instructions</a></li>
+    <li><a href="#optimalTips">Optimal Tips for Optimal Steak</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+  </ul>
 
-<h4 style="font-family:georgia;"> When focusing on beef, steak is: </h4>
-<blockquote style="font-family:georgia; font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368">
-  A slice of meat cut from the fleshy part of a beef carcass. <br /> <!--Do i need ellipses?-->
-  Beef steaks are generally cut across the muscle fiber of a  <br />
-  large section of beef and may or may not include a bone. <br />
-  Most steaks come from three prime areas on a cow.
-</blockquote>
+  <h2 id="whatIsSteak">What is steak?</h2>
 
-<!--Can I use both a link and a citation on the same text? -->
-<a href="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368" target="_blank"><cite>-The Kitchn</cite></a>
-<hr />
-<!-- How do I center an image??-->
-<img src="https://i.redd.it/exuxgpuf8gx41.jpg" style="margin-left:auto; margin-right: auto;"alt="not my steak" width="200" height="250" />
+  <h4 style="font-family:georgia;"> When focusing on beef, steak is: </h4>
+  <blockquote style="font-family:georgia; font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368">
+    A slice of meat cut from the fleshy part of a beef carcass. <br /> <!--Do i need ellipses?-->
+    Beef steaks are generally cut across the muscle fiber of a  <br />
+    large section of beef and may or may not include a bone. <br />
+    Most steaks come from three prime areas on a cow.
+  </blockquote>
 
-<hr />
+  <a href="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368" target="_blank"><cite>-The Kitchn</cite></a>
 
-<h2>Why should you trust Andrew?</h2>
-<p>
-<!--Why is it so far to the right-->
-<!--How do I add more white space-->
-<!--Limit right margin-->
-<picture style="float:right;">
-  <source media="min-width:1000px" srcset="cookingsteak.gif" alt="This is a steak being cooked.">
-  <source media="min-width:500px" srcset="verticalsteak.jpg" alt="Uncooked steak">
-  <img src="opensteak.jpg" alt="Steak cut halfway through">
-</picture>
-  Reasons: <strong>There are none.<strong></p>
-<button onclick="document.location='reasons.html'"> More reasons why you should trust Andrew with your dinner.</button>
+  <hr />
+
+  <h2>Wikipedia Entry</h2>
+  <iframe src="https://en.wikipedia.org/wiki/Steak" width=800vw height=750vw title="Wikipedia Steak Entry" id="wikipediaEntry"></iframe>
+
+  <hr />
+
+  <h2 id="trustAndrew">Why should you trust Andrew?</h2>
+  <p>Reasons: <strong>There are none.<strong></p>
+  <button onclick="document.location='reasons.html'"> More reasons why you should trust Andrew with your dinner.</button>
+
+  <hr />
+
+  <h2 id="ingredients">Ingredients</h2>
+  <!--Ingredients table-->
+  <table style="width=100%">
+    <tr>
+      <th>Ingredients</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+      <td>Ribeye or New York Steaks</td>
+      <td>1-2 steaks</td>
+    </tr>
+    <tr>
+      <td>Oil of your choice(I use avocado oil)</td>
+      <td>Enough to spread over the entire pan</td>
+    <tr>
+      <td>Butter</td>
+      <td>2 tablespoon (largely personal preference)</td>
+    </tr>
+    <tr>
+      <td>Salt</td>
+      <td>1 tablespoon (depends on size and type of beef)</td>
+    </tr>
+    <tr>
+      <td>Pepper</td>
+      <td>1 tablespoon (depends on size and type of beef)</td>
+    </tr>
+    <tr>
+      <td>(Optional) Garlic</td>
+      <td>2-3 cloves</td>
+    </tr>
+    <tr>
+      <td>(Optional) Thyme</td>
+      <td>A few sprigs</td>
+    </tr>
+  </table>
+
+  <hr />
+  <!--instructions, ordered list-->
+  <h2 id="instructions">Instructions</h2>
+  <ol>
+    <li>Take steaks out of fridge</li>
+    <li>If steak is still wet, wipe down with paper towel</li>
+    <li>Salt and pepper steak</li>
+      <ol type="a">
+        <li>Rub salt and pepper into steak</li>
+      </ol>
+    <li>Turn on pan and pour oil</li>
+      <ol type="a">
+        <li>Spread oil over entire pan (i.e. with a spatula)</li>
+      </ol>
+    <li>Put steak in once pot is hot enough (steak should shizzle)</li>
+      <ol type="a">
+        <li>If steak does not sizzle, either the pan is not hot enough, or there is still water</li>
+      </ol>
+    <li>Flip steak every 1-1.5 minutes</li>
+    <li>Make sure to keep measuring the temperature of the steak with a thermometer. Take steak out once it reaches the temperature you want</li>
+    <li>Let steak cool and serve</li>
+  </ol>
+
+  <hr />
+
+  <!-- tips, ordered list-->
+  <h2 id="optimalTips">Optimal Steps for Optimal Steak</h2>
+  <ol type="A">
+    <li>Buy A-5 wagyu beef</li>
+    <li>Tell steak positive affirmations</li>
+    <li>Salt steak the night before and refrigerate</li>
+  </ol>
+
+  <hr />
+  <!--review class-->
+  <h2 id="reviews">Reviews</h2>
+  <div class="reviews">
+    <p><q>5 stars, this steak is god's work.</q></p>
+    <p>-Ashwin, professional League of Legends player</p>
+  </div>
+  <div class="reviews">
+    <p><q>1 star, this steak is trash</q></p>
+    <p>-Ashwin, insignificant citizen who should learn their place.</p>
+  </div>
+  <div class="reviews">
+    <p><q>This steak is so great I ignored 23 calls from my mom.</q></p>
+    <p>Jonathan, professional mom ignorer</p>
+  </div>
+  <div class="reviews">
+    <p><q>This steak reminds me of my own.</q></p>
+    <p>Eric, world class steak chef</p>
+  </div>
+  <div class="reviews">
+    <p><q>More flaky salt</q></p>
+    <p>Logan, flaky salt enthusiast</p>
+  </div>
+</div>
+
+<div class="margin">
+  <h3> Steak of the Day</h3>
+  <img src="disgusting.jpg" alt="milk steak and jelly beans">
+  <p style="font-family:georgia; color:white;"><q>The steak that makes you ache</q> &#8482;</p>
+</div>
 
 
-<hr />
-
-<h2>Ingredients</h2>
-<table style="width=100%">
-  <tr>
-    <th>Ingredients</th>
-    <th>Amount</th>
-  <tr>
-    <td>Ribeye or New York Steaks</td>
-    <!--why it do this???-->
-    <td>1-2 steaks</td>
-  <tr>
-    <td>Butter</td>
-
-
-</table>
-<!-- Need to edit everything below -->
-<p><strong>Seperated paragraph.</strong><br />New line.</p>
-
-<hr />
 </body>
 </html>
