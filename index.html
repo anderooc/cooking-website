@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  .backgroundSquare{width: 50vw; height: 300vh; background-color: linen;}
-  .margin{width: 40vw; height: 100vh; background-color: darkRed; right:0; position: absolute; top: 50%; left: 50%; transform: translate(+17%, +25%); z-index: 1; top: 0; overflow-x: hidden; text-align: center;}
-  ul, ol{font-family:georgia}
-  h2 {font-family:georgia; color:darkRed;}
-  h3 {font-family:georgia; color:ghostWhite}
-  p {font-family:georgia}
-  a:link {color:darkRed}
-  a:visited {color:rgb(102, 0, 51)}
-  a:hover {color:rgb(255, 0, 0)}
-  a:active {color:rgb(128, 0, 0)}
-  table, th, td {border: 1px solid black;}
-  .reviews{background-color: darkRed; color: white; border: 2px solid black; margin: 20px; padding: 20px;}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-color:azure;">
@@ -39,7 +26,7 @@
   <h2 id="whatIsSteak">What is steak?</h2>
 
   <h4 style="font-family:georgia;"> When focusing on beef, steak is: </h4>
-  <blockquote style="font-family:georgia; font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368">
+  <blockquote style="font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368">
     A slice of meat cut from the fleshy part of a beef carcass. <br /> <!--Do i need ellipses?-->
     Beef steaks are generally cut across the muscle fiber of a  <br />
     large section of beef and may or may not include a bone. <br />
@@ -50,13 +37,15 @@
 
   <hr />
 
+  <!--Embedded website-->
   <h2>Wikipedia Entry</h2>
-  <iframe src="https://en.wikipedia.org/wiki/Steak" width=800vw height=750vw title="Wikipedia Steak Entry" id="wikipediaEntry"></iframe>
+  <iframe src="https://en.wikipedia.org/wiki/Steak" width=700vw height=750vw title="Wikipedia Steak Entry" id="wikipediaEntry"></iframe>
 
   <hr />
 
   <h2 id="trustAndrew">Why should you trust Andrew?</h2>
   <p>Reasons: <strong>There are none.<strong></p>
+  <!--Button to reasons.html-->
   <button onclick="document.location='reasons.html'"> More reasons why you should trust Andrew with your dinner.</button>
 
   <hr />
@@ -157,8 +146,11 @@
 
 <div class="margin">
   <h3> Steak of the Day</h3>
-  <img src="disgusting.jpg" alt="milk steak and jelly beans">
+  <img src="disgusting.jpg" alt="milk steak and jelly beans"><img />
   <p style="font-family:georgia; color:white;"><q>The steak that makes you ache</q> &#8482;</p>
+  <hr />
+  <h3> Chef's Corner </h3>
+  <img src="verticalsteak.jpg" alt="raw steak"><img />
 </div>
 
 
