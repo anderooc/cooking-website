@@ -3,11 +3,11 @@
 }
 
 .backgroundSquare{
-  width: 50vw; height: 360vh; background-color: linen;
+  width: 50vw; height: 360vh; background-color: linen; opacity:0.9; border-color:black; border-style:solid; border-radius: 5px;
 }
 
 .margin {
-  width: 40vw; height: 100vh; background-color: darkRed; right:0; position: absolute; top: 20%; left: 50%; transform: translate(+17%, +15%); z-index: 1; top: 0; overflow-x: hidden; text-align: center;
+  width: 42.75vw; height: 100vh; background-color: darkRed; right:0; position: absolute; top: 20%; left: 50%; transform: translate(+17%, +14.4%); z-index: 1; top: 0; overflow-x: hidden; text-align: center;
 }
 
 h2 {
@@ -34,7 +34,11 @@ a:active {
   color:rgb(128, 0, 0)
 }
 
-table, th, td {
+#ingredientsTable {
+  width:100%; border: 1px solid black;
+}
+
+ th, td {
   border: 1px solid black;
 }
 
