@@ -11,12 +11,14 @@
 </head>
 
 <body style="background-color:azure;">
-
-<div class="container">
+<div class="fluid-container">
   <h2 style="background-color:darkRed; color:ghostWhite;" class="display-1">
     <br />
     Andrew's Steak Recipe
   </h2>
+</div>
+
+<div class="container">
   <div class="row">
     <div class ="col-sm-8">
       <h2>Table of Contents</h2>
@@ -33,7 +35,7 @@
       <h2 id="whatIsSteak">What is steak?</h2>
 
       <h4> When focusing on beef, steak is: </h4>
-      <blockquote style="font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368">
+      <blockquote style="font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368" class="blockquote">
         A slice of meat cut from the fleshy part of a beef carcass. <br /> <!--Do i need ellipses?-->
         Beef steaks are generally cut across the muscle fiber of a  <br />
         large section of beef and may or may not include a bone. <br />
@@ -51,7 +53,7 @@
       <hr />
 
       <h2 id="trustAndrew">Why should you trust Andrew?</h2>
-      <p>Reasons: <strong>There are none.</strong></p>
+      <p>Reasons: <strong><mark>There are none.</mark></strong></p>
       <!--Button to reasons.html-->
       <button onclick="document.location='reasons.html'"> More reasons why you should trust Andrew with your dinner.</button>
 
@@ -129,28 +131,19 @@
       <hr />
       <!--review class-->
       <h2 id="reviews">Reviews</h2>
-      <div>
-        <p><q>5 stars, this steak is god's work.</q></p>
-        <p>-Ashwin, professional League of Legends player</p>
-      </div>
-      <div>
-        <p><q>1 star, this steak is trash</q></p>
-        <p>-Ashwin, insignificant citizen who should learn their place.</p>
-      </div>
-      <div >
-        <p><q>This steak is so great I ignored 23 calls from my mom.</q></p>
-        <p>Jonathan, professional mom ignorer</p>
-      </div>
-      <div>
-        <p><q>This steak reminds me of my own.</q></p>
-        <p>Eric, world class steak chef</p>
-      </div>
-      <div>
-        <p><q>More flaky salt</q></p>
-        <p>Logan, flaky salt enthusiast</p>
-      </div>
+      <dl>
+        <dt><q>5 stars, this steak is god's work.</q></dt>
+        <dd>-Ashwin, professional League of Legends player</dd>
+        <dt><q>1 star, this steak is trash</q></dt>
+        <dd>-Ashwin, insignificant citizen who should learn their place.</dd>
+        <dt><q>This steak is so great I ignored 23 calls from my mom.</q></dt>
+        <dd>-Jonathan, professional mom ignorer</dd>
+        <dt><q>This steak reminds me of my own.</q></dt>
+        <dd>-Eric, world class steak chef</dd>
+        <dt><q>More flaky salt</q></dt>
+        <dd>-Logan, flaky salt enthusiast</dd>
+      </dl>
     </div>
-
     <div class="col-sm-4">
       <h3> Steak of the Day</h3>
       <img class="img-fluid" src="disgusting.jpg" alt="milk steak and jelly beans"></img>
@@ -158,6 +151,10 @@
       <hr />
       <h3> Chef's Corner </h3>
       <img class="img-fluid" src="verticalsteak.jpg" alt="raw steak"></img>
+    </div>
+
+    <div class="col-sm-3">
+
     </div>
   </div>
 </div>
