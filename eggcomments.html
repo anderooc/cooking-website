@@ -19,6 +19,7 @@
 </div>
 
 <div class="container">
+  <!--universal navbar-->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -48,12 +49,43 @@
       <li class="nav-item">
         <a class="nav-link" href="#ingredients">Ingredients List</a>
       </li>
+    </ul>
   </div>
   </nav>
   <br />
 
   <div class="row">
     <div class ="col-sm-8">
+
+      <!--definition-->
+
+      <div class="jumbotron">
+        <h2 id="whatIsSteak">What are scrambled eggs?</h2>
+        <h5> Scrambled eggs are: </h5>
+        <blockquote style="font-size:15px; color:rgb(70, 70, 70);" cite="https://www.thekitchn.com/shopping-for-steak-here-are-the-4-cuts-you-should-know-207368" class="blockquote">
+          A slice of meat cut from the fleshy part of a beef carcass. <br />
+          Beef steaks are generally cut across the muscle fiber of a  <br />
+          large section of beef and may or may not include a bone. <br />
+          Most steaks come from three prime areas on a cow.
+        </blockquote>
+      </div>
+      <a href="https://en.wikipedia.org/wiki/Scrambled_eggs" target="_blank"><cite>-Wikipedia</cite></a>
+
+      <hr />
+
+      <!--Embedded website-->
+      <h2>Wikipedia Entry</h2>
+      <iframe src="https://en.wikipedia.org/wiki/Steak" width=700vw height=750vw title="Wikipedia Steak Entry" id="wikipediaEntry"></iframe>
+
+      <hr />
+
+      <h2 id="trustAndrew">Why should you trust Andrew?</h2>
+      <p>Reasons: <strong><mark>There are none.</mark></strong></p>
+      <!--Button to reasons.html-->
+      <button onclick="document.location='reasons.html'"> More reasons why you should trust Andrew with your dinner.</button>
+
+      <hr />
+
       <h2 id="ingredients">Ingredients</h2>
       <!--Ingredients table-->
       <table class="table" id="ingredientsTable">
